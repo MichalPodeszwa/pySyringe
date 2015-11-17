@@ -1,0 +1,44 @@
+# pySyringe
+
+This is `pySyringe`. Inversion of Control container, which helps you get proper [`Dependency Injection`](https://en.wikipedia.org/wiki/Dependency_injection), while still being Pythonic.
+
+Currently `pySyringe` works only on Python 3+. Maybe later, support for 2.7 will be added.
+
+## Installation
+
+    pip install pysyringe
+
+## Usage
+
+```python
+>>> import pysyringe
+>>>
+>>> class Foo:
+...
+...     def __init__(self):
+...         self.bar = 42
+...
+>>> @pysyringe.inject(foo=Foo)
+... def important_function(foo):
+...     return foo.bar
+...
+>>> important_function()
+42
+>>> class Mock:
+...     def __init__(self):
+...         self.bar = 1
+...
+>>> important_function(Mock())
+1
+```
+
+As you can see testing is **a lot** simpler now. You don't need as much _(hopefully none)_ mocking as you used to.
+
+If `pySyringe` injects the same class twice, it doesn't create instances twice, it simply returns previous one.
+
+## Testing
+
+1. Clone this repository
+2. Run `python setup.py develop`
+3. Install `pytest` from `pip`
+4. Run `py.test`
