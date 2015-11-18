@@ -1,8 +1,8 @@
-# pySyringe
+# pySyringe [![Build Status](https://travis-ci.org/MichalPodeszwa/pySyringe.svg)](https://travis-ci.org/MichalPodeszwa/pySyringe) 
 
 This is `pySyringe`. Inversion of Control container, which helps you get proper [`Dependency Injection`](https://en.wikipedia.org/wiki/Dependency_injection), while still being Pythonic.
 
-Currently `pySyringe` works only on Python 3+. Maybe later, support for 2.7 will be added.
+Currently `pySyringe` works only on Python 3.3+. Maybe later, support for older versions will be added.
 
 ## Installation
 
