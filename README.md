@@ -1,4 +1,7 @@
-# pySyringe [![Build Status](https://travis-ci.org/MichalPodeszwa/pySyringe.svg)](https://travis-ci.org/MichalPodeszwa/pySyringe) 
+# pySyringe
+
+[![Build Status](https://travis-ci.org/MichalPodeszwa/pySyringe.svg)](https://travis-ci.org/MichalPodeszwa/pySyringe)
+[![Coverage Status](https://coveralls.io/repos/MichalPodeszwa/pySyringe/badge.svg?branch=master&service=github)](https://coveralls.io/github/MichalPodeszwa/pySyringe?branch=master)
 
 This is `pySyringe`. Inversion of Control container, which helps you get proper [`Dependency Injection`](https://en.wikipedia.org/wiki/Dependency_injection), while still being Pythonic.
 
