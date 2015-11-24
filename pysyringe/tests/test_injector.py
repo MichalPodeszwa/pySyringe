@@ -2,7 +2,7 @@ import pytest
 
 from pysyringe import inject
 
-from .stubs import Foo, Baz, Mocked
+from pysyringe.tests.stubs import Foo, Baz, Mocked
 
 
 @inject(foo=Foo)
