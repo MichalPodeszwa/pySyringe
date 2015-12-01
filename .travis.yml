@@ -6,6 +6,7 @@ python:
   - "nightly"
 
 install:
+  - python setup.py develop
   - pip install pytest pytest-cov coveralls
 
 script: py.test --cov
