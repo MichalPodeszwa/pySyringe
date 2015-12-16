@@ -27,12 +27,19 @@ Currently `pySyringe` works only on Python 3.3+. Maybe later, support for older 
 ...
 >>> important_function()
 42
+
 >>> class Mock:
 ...     def __init__(self):
 ...         self.bar = 1
 ...
 >>> important_function(Mock())
-1
+>>>
+>>> @pysyringe.inject_value(foo=42)
+... def important_function2(foo):
+...     return foo
+>>> important_function2()
+42
+
 ```
 
 As you can see testing is **a lot** simpler now. You don't need as much _(hopefully none)_ mocking as you used to.
